@@ -1,0 +1,154 @@
+/* 기본 리셋 및 스타일 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h3 {
+    color: #333;
+    font-weight: normal;
+}
+
+
+/* 컨테이너 및 결과 박스 스타일링 */
+.container, .block {
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.computer-choice, .you-choice, .result {
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+/* 버튼 스타일링 */
+.buttons {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+
+/* 색상 클래스 */
+.pink {
+    color: #ff647f;
+    border-color: #ff647f;
+}
+
+.blue {
+    color: #6495ff;
+    border-color: #6495ff;
+}
+
+.green {
+    color: #64ff7e;
+    border-color: #64ff7e;
+}
+
+/* 기록 리스트 스타일링 */
+ul {
+    list-style: none;
+    width: 100%;
+    max-width: 300px;
+}
+
+li {
+    background: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+li:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* 삭제 버튼 */
+li button {
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ff647f;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+li button:hover {
+    background-color: #e95d6a;
+}
+
+/* 전체 삭제 버튼 스타일 */
+.totalDelete {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.2s;
+}
+
+.totalDelete:hover {
+    background-color: #444;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .buttons button, .totalDelete {
+        padding: 8px 16px;
+        margin: 8px;
+        font-size: 14px;
+    }
+
+    .container, .block, .result, p {
+        padding: 8px 12px;
+        margin: 8px;
+        font-size: 14px;
+    }
+
+    ul {
+        max-width: none;
+        padding: 0 20px;
+    }
+}
